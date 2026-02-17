@@ -40,7 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             // Adjust for fixed header offset
-            const headerOffset = 80; 
+            const headerOffset = 80;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -80,3 +80,41 @@ revealElements.forEach(element => {
 window.addEventListener('scroll', revealOnScroll);
 // Trigger once on load
 revealOnScroll();
+
+// Contact Form Submission Handling
+let formSubmitted = false;
+const iframe = document.getElementById('hidden_iframe');
+const modal = document.getElementById('success-modal');
+const closeModal = document.getElementById('close-modal');
+const contactForm = document.querySelector('.contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+        formSubmitted = true;
+    });
+}
+
+if (iframe && modal) {
+    iframe.onload = function () {
+        if (formSubmitted) {
+            modal.classList.add('active');
+            contactForm.reset();
+            formSubmitted = false;
+        }
+    };
+}
+
+if (closeModal) {
+    closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+}
+
+// Close modal when clicking outside content
+if (modal) {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+}

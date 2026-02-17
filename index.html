@@ -52,6 +52,8 @@
                     <div class="hero-btns">
                         <a href="#projects" class="btn-primary">View My Work</a>
                         <a href="#contact" class="btn-secondary">Get In Touch</a>
+                        <a href="resume.pdf" class="btn-secondary" target="_blank" download>Resume <i
+                                class="fas fa-download"></i></a>
                     </div>
                     <!-- Social Links Placeholder -->
                     <div class="social-links">
@@ -214,18 +216,20 @@
                 <h2 class="section-title">Contact Me</h2>
                 <p class="contact-text">Have a project in mind or just want to say hi? Feel free to reach out!</p>
                 <div class="contact-wrapper">
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form"
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfLzZCBgjNpTRRvWw_NLsFCmx5fzxoqdM9e4N1BliLFqa-oeA/formResponse"
+                        method="POST" target="hidden_iframe">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="entry.1519373856" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="entry.831010222" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="entry.1740292472" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn-primary">Send Message</button>
                     </form>
@@ -244,6 +248,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <button id="close-modal" class="btn-primary">Close</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
