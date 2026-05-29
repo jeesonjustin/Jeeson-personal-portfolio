@@ -1240,6 +1240,7 @@ section {
 @media (max-width: 768px) {
     .navbar {
         padding: 0 20px;
+        justify-content: space-between;
     }
 
     .nav-links {
@@ -1399,60 +1400,4 @@ section {
 .modal-content p {
     color: var(--text-secondary);
     margin-bottom: 30px;
-}
-
-/* Custom Cursor */
-body, a, button, input, textarea {
-    cursor: none !important;
-}
-
-.cursor-dot {
-    width: 6px;
-    height: 6px;
-    background-color: var(--primary-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9999;
-    pointer-events: none;
-    transition: transform 0.2s ease-out;
-}
-
-.cursor-outline {
-    width: 36px;
-    height: 36px;
-    border: 1px solid var(--primary-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9998;
-    pointer-events: none;
-    transition: transform 0.2s ease-out, background-color 0.2s ease-out;
-}
-
-/* Hover States for Cursor */
-.cursor-outline.hover {
-    transform: translate(-50%, -50%) scale(1.5);
-    background-color: rgba(17, 19, 58, 0.1);
-}
-
-.cursor-dot.hover {
-    transform: translate(-50%, -50%) scale(0.5);
-}
-
-/* White Cursor for Dark Sections */
-.cursor-dot.cursor-white {
-    background-color: #ffffff;
-}
-
-.cursor-outline.cursor-white {
-    border-color: #ffffff;
-}
-
-.cursor-outline.cursor-white.hover {
-    background-color: rgba(255, 255, 255, 0.1);
 }
