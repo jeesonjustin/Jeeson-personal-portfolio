@@ -4,19 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeeson Justin | MCA Graduate & Tech Enthusiast</title>
     <meta name="description"
-        content="Portfolio of Jeeson Justin, a passionate MCA graduate and tech enthusiast specialized in web development and software engineering.">
+        content="Portfolio of Jeeson Justin, a passionate MCA graduate and tech enthusiast specialized in Web Development, UI/UX Design, and AI/ML applications.">
+    <meta name="keywords" content="Jeeson Justin, Web Developer, UI/UX Designer, AI/ML, MCA Graduate, Portfolio">
+    <meta name="author" content="Jeeson Justin">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Jeeson Justin | Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Jeeson Justin, a passionate MCA graduate and tech enthusiast.">
+    <meta property="og:type" content="website">
+
+    <title>Jeeson Justin | MCA Graduate & Tech Enthusiast</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <link rel="icon" href="https://via.placeholder.com/32/38bdf8/1e293b?text=J" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
     <header id="header">
         <nav class="navbar">
             <div class="logo">
@@ -44,27 +60,66 @@
                 <div class="hero-content">
                     <p class="greeting">Hello, I'm</p>
                     <h1 class="name">Jeeson Justin</h1>
-                    <h2 class="title">MCA Graduate & <span class="highlight">Tech Enthusiast</span></h2>
+                    <h2 class="title">I am a <span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
                     <p class="description">
-                        Passionate about building scalable web applications and exploring new technologies.
-                        Let's create something amazing together.
+                        Passionate MCA graduate specializing in Web Development, UI/UX Design, and AI-powered
+                        applications. I build modern digital experiences focused on usability, performance, and
+                        real-world problem solving.
                     </p>
                     <div class="hero-btns">
-                        <a href="#projects" class="btn-primary">View My Work</a>
-                        <a href="#contact" class="btn-secondary">Get In Touch</a>
-                        <a href="resume.pdf" class="btn-secondary" target="_blank" download>Resume <i
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="resume.pdf" class="btn-secondary" target="_blank" download>Download Resume <i
                                 class="fas fa-download"></i></a>
+                        <a href="#contact" class="btn-secondary">Contact Me</a>
                     </div>
-                    <!-- Social Links Placeholder -->
                     <div class="social-links">
-                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="mailto:jeeson.justin@example.com" aria-label="Email"><i
-                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/jeesonjustin" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jeesonjustin" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto:jeeson.justin@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
+                    <div class="profile-img-container">
+                        <img src="https://via.placeholder.com/350x350/1e293b/38bdf8?text=Jeeson" alt="Jeeson Justin">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Highlights Section -->
+        <section id="highlights">
+            <div class="container">
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <i class="fas fa-laptop-code highlight-icon"></i>
+                        <div class="highlight-info">
+                            <h4>4+ Projects Completed</h4>
+                            <p>Real-world applications</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-graduation-cap highlight-icon"></i>
+                        <div class="highlight-info">
+                            <h4>MCA Graduate</h4>
+                            <p>Master's in Computer Apps</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-palette highlight-icon"></i>
+                        <div class="highlight-info">
+                            <h4>UI/UX Designer</h4>
+                            <p>Figma & Web Design</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-brain highlight-icon"></i>
+                        <div class="highlight-info">
+                            <h4>AI/ML Enthusiast</h4>
+                            <p>Machine Learning & Data</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -87,16 +142,23 @@
                             aesthetics or back-end logic, I love the entire process of bringing ideas to life on the
                             screen.
                         </p>
-                        <div class="info-list">
-                            <div class="info-item">
-                                <span class="label">Degree:</span>
-                                <span class="value">Master of Computer Applications (MCA)</span>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">4+</div>
+                                <div class="stat-label">Projects</div>
                             </div>
-                            <div class="info-item">
-                                <span class="label">Focus:</span>
-                                <span class="value">Web Development, Software Engineering</span>
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Technologies</div>
                             </div>
-                            <!-- Add more details as known -->
+                            <div class="stat-item">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Certificates</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Repositories</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,148 +168,410 @@
         <!-- Skills Section -->
         <section id="skills">
             <div class="container">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="skills-grid">
-                    <!-- Front-End -->
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Front-End</h3>
-                        <p>HTML5, CSS3, JavaScript (ES6+), React.js</p>
+                <!-- Tech Stack Section -->
+                <section id="skills">
+                    <div class="container">
+                        <h2 class="section-title">Tech Stack</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Frontend</h3>
+                                <div class="skill-icons">
+                                    <div class="skill-icon"><i class="fab fa-html5"></i><span>HTML</span></div>
+                                    <div class="skill-icon"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                                    <div class="skill-icon"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                                    <div class="skill-icon"><i class="fab fa-react"></i><span>React</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Backend</h3>
+                                <div class="skill-icons">
+                                    <div class="skill-icon"><i class="fab fa-python"></i><span>Python</span></div>
+                                    <div class="skill-icon"><i class="fas fa-server"></i><span>Flask</span></div>
+                                    <div class="skill-icon"><i class="fab fa-php"></i><span>PHP</span></div>
+                                    <div class="skill-icon"><i class="fas fa-database"></i><span>MySQL</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>AI & Tools</h3>
+                                <div class="skill-icons">
+                                    <div class="skill-icon"><i class="fas fa-brain"></i><span>XGBoost</span></div>
+                                    <div class="skill-icon"><i class="fab fa-figma"></i><span>Figma</span></div>
+                                    <div class="skill-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                                    <div class="skill-icon"><i class="fab fa-github"></i><span>GitHub</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Back-End -->
-                    <div class="skill-card">
-                        <i class="fas fa-server"></i>
-                        <h3>Back-End</h3>
-                        <p>Node.js, Express, Python, SQL</p>
-                    </div>
-                    <!-- Tools -->
-                    <div class="skill-card">
-                        <i class="fas fa-tools"></i>
-                        <h3>Tools</h3>
-                        <p>Git, GitHub, VS Code, Postman</p>
-                    </div>
-                    <!-- Soft Skills -->
-                    <div class="skill-card">
-                        <i class="fas fa-users"></i>
-                        <h3>Soft Skills</h3>
-                        <p>Communication, Problem Solving, Teamwork</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="container">
-                <h2 class="section-title">My Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 Placeholder -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="https://via.placeholder.com/600x400/1e293b/ffffff?text=Project+One"
-                                alt="Project One">
-                        </div>
-                        <div class="project-info">
-                            <h3>Project Title One</h3>
-                            <p>A brief description of this project. What problem did it solve? What technologies were
-                                used?</p>
-                            <div class="tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
+                <!-- Journey Timeline Section -->
+                <section id="timeline">
+                    <div class="container">
+                        <h2 class="section-title">My Journey</h2>
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>Master of Computer Applications</h3>
+                                    <p>Completed MCA, building a strong foundation in software engineering, algorithms,
+                                        and full-stack development.</p>
+                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="btn-link">View Demo <i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>Full Stack Development</h3>
+                                    <p>Developed robust web applications using modern tech stacks including React,
+                                        Node.js, PHP, and MySQL.</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 Placeholder -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="https://via.placeholder.com/600x400/1e293b/ffffff?text=Project+Two"
-                                alt="Project Two">
-                        </div>
-                        <div class="project-info">
-                            <h3>Project Title Two</h3>
-                            <p>A brief description of this project. What problem did it solve? What technologies were
-                                used?</p>
-                            <div class="tags">
-                                <span>React</span>
-                                <span>Node</span>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>AI/ML Exploration</h3>
+                                    <p>Ventured into artificial intelligence and machine learning, building predictive
+                                        models and exploring explainable AI.</p>
+                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="btn-link">View Demo <i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>UI/UX Learning</h3>
+                                    <p>Mastered modern design principles using Figma to create accessible, visually
+                                        stunning user experiences.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- Services Section -->
-        <section id="services">
-            <div class="container">
-                <h2 class="section-title">Services</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Web Development</h3>
-                        <p>Responsive and fast websites built with modern technologies.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>UI/UX Implementation</h3>
-                        <p>Translating designs into interactive front-end code.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-bug"></i>
-                        <h3>Bug Fixing</h3>
-                        <p>Debugging and optimizing existing code for better performance.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <!-- Projects Section -->
+                <section id="projects">
+                    <div class="container">
+                        <h2 class="section-title">My Projects</h2>
+                        <div class="projects-grid">
+                            <!-- Project 1: AetherMap -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="Thumbnail- Aethermap Dashboard.png" alt="AetherMap">
+                                </div>
+                                <div class="project-info">
+                                    <h3>AetherMap – Drone Registration</h3>
+                                    <p>A drone flying zone tracker and registration portal that visualizes
+                                        restricted/permitted zones across India with approval workflow and certificates.
+                                    </p>
+                                    <div class="tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                        <span>PHP</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn-link">Live Demo <i
+                                                class="fas fa-external-link-alt"></i></a>
+                                        <a href="https://github.com/jeesonjustin/AetherMap-Drone-Registration"
+                                            target="_blank" class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title">Contact Me</h2>
-                <p class="contact-text">Have a project in mind or just want to say hi? Feel free to reach out!</p>
-                <div class="contact-wrapper">
-                    <form class="contact-form"
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfLzZCBgjNpTRRvWw_NLsFCmx5fzxoqdM9e4N1BliLFqa-oeA/formResponse"
-                        method="POST" target="hidden_iframe">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="entry.1519373856" required>
+                            <!-- Project 2: AirAware -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="Thnumbnail- AQI Dashboard.png" alt="AirAware">
+                                </div>
+                                <div class="project-info">
+                                    <h3>AirAware AQI Prediction</h3>
+                                    <p>AI-powered AQI prediction system using XGBoost and SHAP explainability with
+                                        real-time pollution monitoring and live weather API integration.</p>
+                                    <div class="tags">
+                                        <span>Python</span>
+                                        <span>Flask</span>
+                                        <span>XGBoost</span>
+                                        <span>SHAP</span>
+                                        <span>ML</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn-link">Live Demo <i
+                                                class="fas fa-external-link-alt"></i></a>
+                                        <a href="https://github.com/jeesonjustin/AQI-Prediction-System" target="_blank"
+                                            class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3: Canvart -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="Thnumbnail- Canvart2.png" alt="Canvart">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Canvart Art Selling Website</h3>
+                                    <p>A modern art-selling platform designed with a user-friendly UI for showcasing and
+                                        purchasing artworks online securely.</p>
+                                    <div class="tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                        <span>UI/UX</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn-link">Live Demo <i
+                                                class="fas fa-external-link-alt"></i></a>
+                                        <a href="https://github.com/jeesonjustin/Canvart-Artselling-Website"
+                                            target="_blank" class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 4: Travel Booking -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="Thnumbnail- Getfly2.png" alt="Travel Booking App UI">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Travel Booking App UI/UX</h3>
+                                    <p>A complete travel booking application UI designed in Figma with intuitive booking
+                                        flow, accessibility-focused layouts, and modern mobile UX principles.</p>
+                                    <div class="tags">
+                                        <span>Figma</span>
+                                        <span>UI/UX</span>
+                                        <span>Prototyping</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn-link">Live Demo <i
+                                                class="fas fa-external-link-alt"></i></a>
+                                        <a href="https://github.com/jeesonjustin/Travel-Booking-App-UIUX"
+                                            target="_blank" class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="entry.831010222" required>
+                    </div>
+                </section>
+
+                <!-- Certifications Section -->
+                <section id="certifications" style="display: none;">
+                    <div class="container">
+                        <h2 class="section-title">Certifications</h2>
+                        <div class="cert-grid">
+                            <div class="cert-card">
+                                <i class="fas fa-certificate cert-icon"></i>
+                                <h3>Coursera</h3>
+                                <p>Machine Learning Specialization</p>
+                                <a href="#" class="btn-link">View Certificate <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-certificate cert-icon"></i>
+                                <h3>Infosys Springboard</h3>
+                                <p>Full Stack Development</p>
+                                <a href="#" class="btn-link">View Certificate <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-certificate cert-icon"></i>
+                                <h3>IBM</h3>
+                                <p>Data Science Professional</p>
+                                <a href="#" class="btn-link">View Certificate <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-certificate cert-icon"></i>
+                                <h3>Google</h3>
+                                <p>UX Design Professional</p>
+                                <a href="#" class="btn-link">View Certificate <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-certificate cert-icon"></i>
+                                <h3>NPTEL</h3>
+                                <p>Cloud Computing</p>
+                                <a href="#" class="btn-link">View Certificate <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="entry.1740292472" rows="5" required></textarea>
+                    </div>
+                </section>
+
+                <!-- GitHub Stats Section -->
+                <section id="github-stats" style="display: none;">
+                    <div class="container">
+                        <h2 class="section-title">GitHub Stats</h2>
+                        <div class="github-grid">
+                            <div class="github-card">
+                                <img src="https://github-readme-stats.vercel.app/api?username=jeesonjustin&theme=radical&show_icons=true&hide_border=true&bg_color=1e293b"
+                                    alt="GitHub Stats">
+                            </div>
+                            <div class="github-card">
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeesonjustin&theme=radical&hide_border=true&bg_color=1e293b&layout=compact"
+                                    alt="Top Languages">
+                            </div>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+                    </div>
+                </section>
+
+                <!-- Currently Exploring Section -->
+                <section id="exploring" style="display: none;">
+                    <div class="container">
+                        <h2 class="section-title">Currently Exploring</h2>
+                        <div class="exploring-grid">
+                            <div class="explore-card">
+                                <i class="fab fa-react explore-icon"></i>
+                                <h3>React.js</h3>
+                            </div>
+                            <div class="explore-card">
+                                <i class="fas fa-brain explore-icon"></i>
+                                <h3>Machine Learning</h3>
+                            </div>
+                            <div class="explore-card">
+                                <i class="fas fa-layer-group explore-icon"></i>
+                                <h3>Full Stack Dev</h3>
+                            </div>
+                            <div class="explore-card">
+                                <i class="fas fa-plug explore-icon"></i>
+                                <h3>API Integration</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services Section -->
+                <section id="services">
+                    <div class="container">
+                        <h2 class="section-title">Services</h2>
+                        <div class="services-grid">
+                            <div class="service-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Web Development</h3>
+                                <p>Responsive and fast websites built with modern technologies.</p>
+                            </div>
+                            <div class="service-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>UI/UX Implementation</h3>
+                                <p>Translating designs into interactive front-end code.</p>
+                            </div>
+                            <div class="service-item">
+                                <i class="fas fa-bug"></i>
+                                <h3>Bug Fixing</h3>
+                                <p>Debugging and optimizing existing code for better performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials Section -->
+                <section id="testimonials" style="display: none;">
+                    <div class="container">
+                        <h2 class="section-title">Testimonials</h2>
+                        <div class="testimonials-grid">
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p class="testimonial-text">"Jeeson is a highly motivated developer with a keen eye for
+                                    design and performance. His work on the recent web project was outstanding."</p>
+                                <div class="testimonial-author">
+                                    <h4>Mentor</h4>
+                                    <span>Senior Software Engineer</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p class="testimonial-text">"Working with Jeeson was a great experience. He is
+                                    dedicated, quick to learn new technologies, and always delivers high-quality code."
+                                </p>
+                                <div class="testimonial-author">
+                                    <h4>Client</h4>
+                                    <span>Freelance Project</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p class="testimonial-text">"His ability to seamlessly integrate machine learning models
+                                    with a modern UI is truly impressive. Highly recommend him for any tech team."</p>
+                                <div class="testimonial-author">
+                                    <h4>Colleague</h4>
+                                    <span>Tech Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hire Me CTA Section -->
+                <section id="hire-me" class="cta-section">
+                    <div class="container">
+                        <div class="cta-content">
+                            <h2>Ready to collaborate on innovative projects and modern digital experiences?</h2>
+                            <div class="cta-buttons">
+                                <a href="#contact" class="btn-primary">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact">
+                    <div class="container">
+                        <h2 class="section-title">Contact Me</h2>
+                        <p class="contact-text">Have a project in mind or just want to say hi? Feel free to reach out!
+                        </p>
+                        <div class="contact-wrapper">
+                            <form class="contact-form"
+                                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfLzZCBgjNpTRRvWw_NLsFCmx5fzxoqdM9e4N1BliLFqa-oeA/formResponse"
+                                method="POST" target="hidden_iframe">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="entry.1519373856" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="entry.831010222" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="entry.1740292472" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Jeeson Justin. All rights reserved.</p>
+    <footer class="premium-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">JJ<span>.</span></a>
+                <p>Building modern digital experiences focusing on usability and performance.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
             <div class="footer-socials">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jeesonjustin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jeesonjustin" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jeeson Justin. All rights reserved.</p>
+            <p class="built-with">Built with <i class="fas fa-heart"></i> by Jeeson Justin</p>
+        </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Hidden iframe for form submission -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
@@ -264,7 +588,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
